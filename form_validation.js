@@ -1,3 +1,5 @@
+ // A form validation syntax in JavaScript
+
  const button = document.querySelector(".submit")
  const password = document.querySelector(".password")
  const email = document.querySelector(".email")
@@ -18,18 +20,14 @@
  	} else {
  		alert ("Invalid Email!!");
  	} 
+ 
+                   //Validation 2 details:
+  /*----------------------------------------------------*/
+  
+ 
+ 	 
 
- 	//Validation 3
- 	if (password.value == password2.value) {
- 		console.log("Good!");
- 	} else {
- 		alert ("Passwords do not match!!");
- 	} 
- } );
-
-
- 	//Validation 2 details:
- 	 /*1.inside your script tags
+/*1.inside your script tags
 
 function validateEmail(emailField){
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -47,7 +45,10 @@ in your textfield:
 
 <input type="text" onblur="validateEmail(this);" /> */
      
-     /*2.First off - I'd recommend the email validator RegEx from Hexillion: http://hexillion.com/samples/
+
+  
+  
+/*2.First off - I'd recommend the email validator RegEx from Hexillion: http://hexillion.com/samples/
 
 It's pretty comprehensive - :
 
@@ -72,5 +73,16 @@ Of course that's lacking some sanity checks and won't do domain verification (th
 
 Note: I tend to use the match() string method rather than the test() RegExp method but it shouldn't make any difference.*/
 
- }
+
+
+ 	//Validation 3
+ 	if (password.value == password2.value) {
+ 		console.log("Good!");
+ 	} else {
+ 		alert ("Passwords do not match!!");
+ 	} 
+ } );
+
+
+ 	
 
